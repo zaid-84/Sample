@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Practice Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">MyWebsite</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to My Website</h1>
+            <p>This is a simple practice website built with HTML, CSS, and JavaScript</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
+                I'm a web developer passionate about creating beautiful and functional websites. 
+                This website showcases some basic web development skills using HTML, CSS, and JavaScript.
+            </p>
+        </section>
+
+        <section class="section" id="services">
+            <h2>My Skills</h2>
+            <div class="cards">
+                <div class="card" onclick="incrementCounter(this)">
+                    <h3>HTML</h3>
+                    <div class="counter">0</div>
+                    <p>Structure and markup for web pages</p>
+                </div>
+                <div class="card" onclick="incrementCounter(this)">
+                    <h3>CSS</h3>
+                    <div class="counter">0</div>
+                    <p>Styling and layout for beautiful designs</p>
+                </div>
+                <div class="card" onclick="incrementCounter(this)">
+                    <h3>JavaScript</h3>
+                    <div class="counter">0</div>
+                    <p>Interactive functionality and logic</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>Get In Touch</h2>
+            <div style="text-align: center;">
+                <p style="margin-bottom: 2rem;">Feel free to reach out if you'd like to collaborate!</p>
+                <button class="btn" onclick="showAlert()">Contact Me</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Practice Website. Built for learning purposes.</p>
+        </div>
+    </footer>
+
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
